@@ -1,0 +1,18 @@
+{
+    "name": "tonnguyen-fieldtypebag",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "homepage": "https://github.com/tonnguyen",
+    "repository": {},
+    "scripts": {
+        "prod": "webpack --mode production --config ./config/webpack/webpack.js --color",
+        "prod:w": "webpack --mode production --watch --config ./config/webpack/webpack.js --color",
+        "build:w": "webpack --mode development --watch --config ./config/webpack/webpack.js --color --progress --profile",
+        "build": "webpack --mode production --config ./config/webpack/webpack.js --color",
+        "lint": "tslint src/**/*.ts"
+    },
+    "devDependencies": {
+        "litium-ui": "https://packages.litium.com/Npm/litium-ui?7.1.0",
+        "uglifyjs-webpack-plugin": "2.1.1"
+    }
+}

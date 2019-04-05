@@ -1,0 +1,11 @@
+bin
+dist
+obj
+node_modules
+packages
+.vscode
+.vs
+*.csproj.user
+yarn-error.log
+yarn.lock
+*.nupkg

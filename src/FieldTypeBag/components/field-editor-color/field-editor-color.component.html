@@ -1,0 +1,7 @@
+<field-editor [field]="field">
+    <p preview>{{ getValue(viewLanguage)}}</p>
+    <p-colorPicker edit [id]="name" #control [inline]="true"
+        [ngModel]="getValue(editLanguage)" 
+        (onChange)="valueChange($event.value, editLanguage)"
+    ></p-colorPicker>
+</field-editor>

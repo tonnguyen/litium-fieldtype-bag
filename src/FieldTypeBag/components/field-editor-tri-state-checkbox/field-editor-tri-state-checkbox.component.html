@@ -1,0 +1,8 @@
+<field-editor [field]="field">
+    <p preview>{{ getBoolValue(viewLanguage)}}</p>
+    <p-triStateCheckbox edit type="password" pPassword [id]="name" #control 
+        [ngStyle]="{ borderColor: 'transparent' }"
+        [ngModel]="getBoolValue(editLanguage)" 
+        (onChange)="valueChange($event.value, editLanguage)"
+    ></p-triStateCheckbox>
+</field-editor>

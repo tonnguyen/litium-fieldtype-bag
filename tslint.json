@@ -1,0 +1,44 @@
+{
+  "extends": ["codelyzer"],
+  "rulesDirectory": [
+    "node_modules/rxjs-tslint"
+  ],
+  "rules": {
+    "rxjs-collapse-imports": true,
+    "rxjs-pipeable-operators-only": true,
+    "rxjs-no-static-observable-methods": true,
+    "rxjs-proper-imports": true,
+    "directive-selector": [false],
+    "component-selector": [false],
+    "prefer-output-readonly": false,
+    "no-input-rename": false,
+    "no-output-rename": false,
+    "directive-class-suffix": false,
+    "no-output-on-prefix": false,
+    "use-host-property-decorator": false,
+    "component-class-suffix": false,
+    "trackBy-function": false,
+    "template-cyclomatic-complexity": [false],
+    "no-life-cycle-call": false,
+    "i18n": [false],    
+    "angular-whitespace": [true, "check-semicolon"],
+
+    "banana-in-box": true,
+    "templates-no-negated-async": true,
+    "max-inline-declarations": true,
+    "no-conflicting-life-cycle-hooks": true,
+    "enforce-component-selector": true,
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-view-encapsulation": true,
+    "no-attribute-parameter-decorator": true,
+    "no-output-named-after-standard-event": true,
+    "no-forward-ref": true,
+    "no-unused-css": true,
+    "use-life-cycle-interface": true,
+    "contextual-life-cycle": true,
+    "use-pipe-transform-interface": true,
+    "pipe-impure": true,
+    "template-conditional-complexity": [true, 4]
+  }
+}
