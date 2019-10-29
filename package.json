@@ -9,9 +9,19 @@
         "prod:w": "webpack --mode production --watch --config ./config/webpack/webpack.js --color",
         "build:w": "webpack --mode development --watch --config ./config/webpack/webpack.js --color --progress --profile",
         "build": "webpack --mode production --config ./config/webpack/webpack.js --color",
-        "lint": "tslint src/**/*.ts"
+        "lint": "tslint src/**/*.ts",
+        "storybook": "start-storybook",
+        "build-storybook": "build-storybook"
     },
     "devDependencies": {
+        "@storybook/addon-actions": "^5.2.5",
+        "@storybook/addon-knobs": "^5.2.5",
+        "@storybook/addon-links": "^5.2.5",
+        "@storybook/addon-viewport": "^5.2.5",
+        "@storybook/addons": "^5.2.5",
+        "@storybook/angular": "^5.2.5",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.2.0",
         "litium-ui": "https://packages.litium.com/Npm/litium-ui?7.1.0",
         "uglifyjs-webpack-plugin": "2.1.1"
     }

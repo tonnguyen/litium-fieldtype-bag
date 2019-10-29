@@ -9,3 +9,4 @@ packages
 yarn-error.log
 yarn.lock
 *.nupkg
+storybook-static
