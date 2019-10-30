@@ -7,5 +7,5 @@ packages
 .vs
 *.csproj.user
 yarn-error.log
-yarn.lock
 *.nupkg
+storybook-static
