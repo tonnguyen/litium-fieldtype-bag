@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props" Condition="Exists('..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props')" />
   <Import Project="..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props" Condition="Exists('..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,65 +44,65 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Studio.ThirdParty.DotNetZip.1.0.0\lib\net20\Ionic.Zip.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Studio.ThirdParty.DotNetZip.1.0.0\lib\net20\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Abstractions, Version=7.1.0.0, Culture=neutral, PublicKeyToken=093d4a638630e7c5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Abstractions.7.1.0\lib\netstandard2.0\Litium.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Abstractions.7.1.0\lib\netstandard2.0\Litium.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Foundation, Version=7.1.0.0, Culture=neutral, PublicKeyToken=e47737e618208e4b, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Foundation.7.1.0\lib\net472\Litium.Foundation.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Foundation.7.1.0\lib\net472\Litium.Foundation.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Foundation.GUI, Version=7.1.0.0, Culture=neutral, PublicKeyToken=a40357825b856809, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Foundation.GUI.7.1.0\lib\net472\Litium.Foundation.GUI.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Foundation.GUI.7.1.0\lib\net472\Litium.Foundation.GUI.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Framework.Search, Version=5.1.0.0, Culture=neutral, PublicKeyToken=8232cca59cf208c4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Framework.Search.5.1.0\lib\net40\Litium.Framework.Search.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Framework.Search.5.1.0\lib\net40\Litium.Framework.Search.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Owin, Version=7.1.0.0, Culture=neutral, PublicKeyToken=093d4a638630e7c5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Owin.7.1.0\lib\net472\Litium.Owin.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Owin.7.1.0\lib\net472\Litium.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Studio, Version=7.1.0.0, Culture=neutral, PublicKeyToken=093d4a638630e7c5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Studio.7.1.0\lib\net472\Litium.Studio.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Studio.7.1.0\lib\net472\Litium.Studio.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Studio.Packages, Version=7.1.0.0, Culture=neutral, PublicKeyToken=093d4a638630e7c5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Studio.Packages.7.1.0\lib\net472\Litium.Studio.Packages.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Studio.Packages.7.1.0\lib\net472\Litium.Studio.Packages.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Utilities, Version=7.1.0.0, Culture=neutral, PublicKeyToken=640ada3058909375, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Utilities.7.1.0\lib\net472\Litium.Utilities.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Utilities.7.1.0\lib\net472\Litium.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Web.Abstractions, Version=7.1.0.0, Culture=neutral, PublicKeyToken=093d4a638630e7c5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Web.Abstractions.7.1.0\lib\net472\Litium.Web.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Abstractions.7.1.0\lib\net472\Litium.Web.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Litium.Web.Administration.Abstractions, Version=7.1.0.0, Culture=neutral, PublicKeyToken=093d4a638630e7c5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\lib\net472\Litium.Web.Administration.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\lib\net472\Litium.Web.Administration.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Caching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Microsoft.Extensions.Caching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Localization.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Localization.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Microsoft.Extensions.Localization.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.configuration" />
@@ -109,15 +110,15 @@
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -125,7 +126,7 @@
     <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+      <HintPath>..\..\Accelerator Mvc 7.1.0\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -145,6 +146,9 @@
     <Compile Include="ColorField\ColorFieldTypeMetadata.cs" />
     <Compile Include="ExtensionsModuleRouterInitTask.cs" />
     <Compile Include="FieldTypeConverterBase.cs" />
+    <Compile Include="GoogleMap\FieldTypeConstants.cs" />
+    <Compile Include="GoogleMap\GoogleMapEditFieldTypeConverter.cs" />
+    <Compile Include="GoogleMap\GoogleMapFieldTypeMetadata.cs" />
     <Compile Include="PasswordField\PasswordFieldTypeConverter.cs" />
     <Compile Include="PasswordField\PasswordFieldTypeMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,8 +170,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props'))" />
-    <Error Condition="!Exists('..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets'))" />
+    <Error Condition="!Exists('..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.props'))" />
+    <Error Condition="!Exists('..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets'))" />
   </Target>
-  <Import Project="..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets" Condition="Exists('..\..\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets')" />
+  <Import Project="..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets" Condition="Exists('..\..\Accelerator Mvc 7.1.0\packages\Litium.Web.Administration.Abstractions.7.1.0\build\Litium.Web.Administration.Abstractions.targets')" />
 </Project>
