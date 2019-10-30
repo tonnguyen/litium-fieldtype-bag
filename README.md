@@ -2,8 +2,7 @@
 
 # Litium Field types bag
 
-![Google Map field single languages](images/SingleLang.PNG)
-![Google Map field mutiple languages](images/MultiLang.PNG)
+A bag of custom field types. [Live demo](https://storiesofmyfield.tonnguyen.com/)
 
 ## Install
 To install this Add-on to your site, you need a site running equivalent version of Litium. This Add-on's version is inlined with Litium's version. If its version is 6.0.0, that means it is built against Litium 6.0.0. 
@@ -30,4 +29,3 @@ Even though the AddOn is ready to use by just installing the package, you can st
 2. Execute the following command in Package Manager Console: `Update-Package -ReInstall`
 3. Execute the BuildClientScripts.bat file
 4. Build the solution
-5. Execute `yarn run pack` to build the NuGet package.
