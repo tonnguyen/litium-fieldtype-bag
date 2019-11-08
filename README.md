@@ -3,6 +3,11 @@
 # Litium Field types bag
 
 A bag of custom field types. [Live demo](https://storiesofmyfield.tonnguyen.com/)
+- [Color picker](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditorcolor--color)
+- [Google Map](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditorgooglemap--map)
+- [Password](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditorpassword--password)
+- [Tristate checkbox](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditortristatecheckbox--tri-state-checkbox)
+- [React textbox](https://storiesofmyfield.tonnguyen.com/?path=/story/react--text)
 
 ## Install
 To install this Add-on to your site, you need a site running equivalent version of Litium. This Add-on's version is inlined with Litium's version. If its version is 6.0.0, that means it is built against Litium 6.0.0. 
