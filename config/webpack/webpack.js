@@ -20,7 +20,7 @@ module.exports = (env, argv) => ({
     module: {
         rules: [
             {
-                test: /\.ts$/,
+                test: /\.ts(x?)$/,
                 enforce: 'pre',
                 loader: 'tslint-loader',
                 options: {
@@ -29,7 +29,7 @@ module.exports = (env, argv) => ({
                 }
             },
             {
-                test: /\.(ts)$/,
+                test: /\.(ts(x?))$/,
                 use: ['happypack/loader?id=ts'],
                 exclude: /node_modules/
             },
@@ -119,6 +119,6 @@ module.exports = (env, argv) => ({
             helpers.root("node_modules"),
             helpers.root("src/" + moduleName)
         ],
-        extensions: ['.ts', '.js', '.json']
+        extensions: ['.ts', '.js', '.json', '.tsx']
     }
 });
