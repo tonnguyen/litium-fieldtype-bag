@@ -13,6 +13,9 @@ import { FieldEditorTriStateCheckbox } from './components/field-editor-tri-state
 import { UiModule } from 'litium-ui';
 import { AgmCoreModule } from 'tonnguyen-agm-core';
 
+import { ReactFieldEditorModule } from 'litium-react-field-editor';
+import { FieldEditorReactText } from './components/react-text/field-editor-react-text.component';
+
 @NgModule({
     declarations: [
         // custom components should be declared in 'declarations'
@@ -21,10 +24,12 @@ import { AgmCoreModule } from 'tonnguyen-agm-core';
         FieldEditorTriStateCheckbox,
         FieldEditorGoogleMap,
         FieldEditorGoogleMapSetting,
+        FieldEditorReactText,
     ],
     imports: [ 
         AgmCoreModule,
         CommonModule,
+        ReactFieldEditorModule,
         UiModule,
         TranslateModule,
         PasswordModule,

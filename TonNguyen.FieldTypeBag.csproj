@@ -152,6 +152,7 @@
     <Compile Include="PasswordField\PasswordFieldTypeConverter.cs" />
     <Compile Include="PasswordField\PasswordFieldTypeMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactTextField\FieldType.cs" />
     <Compile Include="StringFieldType.cs" />
     <Compile Include="TriStateBoolean\TriStateBooleanFieldTypeConverter.cs" />
     <Compile Include="TriStateBoolean\TriStateBooleanFieldTypeMetadata.cs" />
