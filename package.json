@@ -28,6 +28,7 @@
         "litium-ui": "https://packages.litium.com/Npm/litium-ui?7.1.0",
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
+        "react-rte": "^0.16.1",
         "rxjs-compat": "6.3.3",
         "tonnguyen-agm-core": "1.1.0",
         "uglifyjs-webpack-plugin": "2.1.1"
