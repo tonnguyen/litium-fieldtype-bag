@@ -6,7 +6,7 @@ export const RichTextFieldEditor = ({ name, value, editable, valueChange }) => {
     return (
         <>
             {!editable && <div dangerouslySetInnerHTML={{__html: value || ''}}/>}
-            {editable && <CKEditor id={name} data={value} editor={ClassicEditor}
+            {editable && <CKEditor id={name} data={value || ''} editor={ClassicEditor}
                 onChange={ (event, editor) => {
                     valueChange(editor.getData());
                  }}
