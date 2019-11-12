@@ -1,13 +1,16 @@
 import * as React from "react";
-import RichTextEditor from 'react-rte';
+import * as CKEditor from '@ckeditor/ckeditor5-react';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export const RichTextFieldEditor = ({ name, value, editable, valueChange }) => {
-    const rawValue = value || RichTextEditor.createEmptyValue();
     return (
         <>
-            {!editable && <RichTextEditor readOnly={true} value={rawValue}/>}
-            {editable && <RichTextEditor id={name} value={rawValue} 
-                onChange={(value) => valueChange(value)} />}
+            {!editable && <div dangerouslySetInnerHTML={{__html: value || ''}}/>}
+            {editable && <CKEditor id={name} data={value} editor={ClassicEditor}
+                onChange={ (event, editor) => {
+                    valueChange(editor.getData());
+                 }}
+            />}
         </>
     );
 };

@@ -7,7 +7,8 @@ A bag of custom field types. [Live demo](https://storiesofmyfield.tonnguyen.com/
 - [Google Map](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditorgooglemap--map)
 - [Password](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditorpassword--password)
 - [Tristate checkbox](https://storiesofmyfield.tonnguyen.com/?path=/story/fieldeditortristatecheckbox--tri-state-checkbox)
-- [React textbox](https://storiesofmyfield.tonnguyen.com/?path=/story/react--text)
+- [React textbox](https://storiesofmyfield.tonnguyen.com/?path=/story/react-text--text)
+- [React rich text editor](https://storiesofmyfield.tonnguyen.com/?path=/story/react-rich-text-editor--rich-text-editor)
 
 ## Install
 To install this Add-on to your site, you need a site running equivalent version of Litium. This Add-on's version is inlined with Litium's version. If its version is 6.0.0, that means it is built against Litium 6.0.0. 
