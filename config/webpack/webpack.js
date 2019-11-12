@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const helpers = require('../helpers');
 const distPath = helpers.root('dist');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const HappyPack = require('happypack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const path = require('path');
@@ -63,10 +63,17 @@ module.exports = (env, argv) => ({
         namedChunks: true,
         minimize: argv.mode == 'production',
         minimizer: [
-            new UglifyJSPlugin({
+            new TerserPlugin({
                 sourceMap: true,
-                uglifyOptions: {
-                    mangle: false, // to keep component name
+                parallel: true,
+                cache: true,
+                terserOptions: {
+                    compress: {
+                        keep_fnames: true
+                    },
+                    mangle: {
+                        keep_fnames: true,
+                    }
                 }
             })
         ],

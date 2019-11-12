@@ -15,6 +15,7 @@ import { AgmCoreModule } from 'tonnguyen-agm-core';
 
 import { ReactFieldEditorModule } from 'litium-react-field-editor';
 import { FieldEditorReactText } from './components/react-text/field-editor-react-text.component';
+import { FieldEditorReactRte } from './components/react-rte/field-editor-react-rte.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { FieldEditorReactText } from './components/react-text/field-editor-react
         FieldEditorGoogleMap,
         FieldEditorGoogleMapSetting,
         FieldEditorReactText,
+        FieldEditorReactRte,
     ],
     imports: [ 
         AgmCoreModule,

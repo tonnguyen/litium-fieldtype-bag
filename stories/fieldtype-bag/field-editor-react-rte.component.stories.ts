@@ -8,14 +8,14 @@ import { withLayout } from '../utils/with-layout';
 import { withRedux } from '../utils/with-redux';
 import { withTranslation } from '../utils/with-translation';
 import { ReactFieldEditorModule } from 'litium-react-field-editor';
-import { FieldEditorReactText } from '../../src/FieldTypeBag/components/react-text/field-editor-react-text.component';
+import { FieldEditorReactRte } from '../../src/FieldTypeBag/components/react-rte/field-editor-react-rte.component';
 
 export default { 
-    title: 'React/text',
+    title: 'React/Rich text editor',
     decorators: [
         withRedux(state => state, defaultState),
         moduleMetadata({
-            declarations: [FieldEditorReactText],
+            declarations: [FieldEditorReactRte],
             imports: [
                 UiModule.forRoot(),
                 ReactFieldEditorModule,
@@ -32,16 +32,16 @@ export default {
     ], 
 }
 
-export const text = () => ({
-    template: `<field-editor-react-text 
+export const richTextEditor = () => ({
+    template: `<field-editor-react-rte 
         [form]="form" 
         [name]="name" 
         [label]="label"
         [tooltip]="tooltip"
         [isCultureSpecific]="isCultureSpecific"
         [valueAsDictionary]="true"
-    ></field-editor-react-text>`,
+    ></field-editor-react-rte>`,
     props: {
-        ...fieldFramework('foo', 'React text field'),
+        ...fieldFramework('foo', 'React rich text editor field'),
     },
 });
